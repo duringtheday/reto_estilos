@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reto: Estilos</title>
     <style>
+        /* Reseteo */
         * {
             margin: 0;
             padding: 0;
@@ -13,11 +14,13 @@
         ul, ol {
             list-style: none;
         }
+        /* Cuerpo de la página (body). */
         body {
             background: linear-gradient(to bottom, #48a7d7, #02abff);
             margin: 0;
             padding: 0;
         }
+        /* Contenedor del primer bloque de la página, el encabezado (header). */
         .container1 {
             background: #203f4a;
             position: relative;
@@ -28,7 +31,8 @@
             padding: 47.5px 0;
             z-index: 0;
         }
-
+        /* Creación de un pseudo-elemento para enviar detrás la imagen principal del banner del
+        encabezado y organizarlo respecto al texto, para no perder su visibilidad. */
         .container1::before {
             content: "";
             position: absolute;
@@ -54,20 +58,23 @@
             box-shadow: 0 0 10px 0.5px  #282828;
             z-index: 1;
         } */
+        /* Contenedor del segundo bloque. */
         .container2 {
             padding: 50px 20px;
             text-align: center;
         }
+        /* Imagen del contenedor del segundo bloque (img). */
         .container2 img {
             margin: 20px;
             box-shadow: 0 0 15px 1px #203f4a;
         }
+        /* Enlace (a) */
         a {
             color: white;
             text-decoration: none; 
             font-size: 10px; 
         }
-
+        /* Pié de página (footer) */
         footer {
             background-color: #203f4a;
             color: white;
